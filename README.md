@@ -1,6 +1,10 @@
-# Local setup
+# AOTW Backend
 
-## OpenSSL
+Backend for parsing and sending data from a MySQL database to an AOTW Frontend project of choice.
+
+## Local setup
+
+### OpenSSL
 
 1. Make sure OpenSSL is installed
 2. _In your terminal_ generate a 2048-bit RSA key:<br>
@@ -9,7 +13,7 @@
    `openssl rsa -in private.pem -outform PEM -pubout -out public.pem`
 4. Copy/paste files to the _root_ of this project and change extension to `.key`
 
-## Environment variables
+### Environment variables
 
 1. _In the root_ create `.env` file with required keys from the `.env.local` file
 2. _In your terminal_ type the following to connect your `.env`:
