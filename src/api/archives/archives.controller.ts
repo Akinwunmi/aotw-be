@@ -1,7 +1,5 @@
 import { Request, RequestHandler, Response } from 'express';
 
-import { ARCHIVES_STUB } from '../../../mock/archives';
-import { Archive } from './archives.model';
 import * as ArchiveService from './archives.service';
 
 export const getArchives: RequestHandler = async (req: Request, res: Response) => {
