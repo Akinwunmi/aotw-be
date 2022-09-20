@@ -4,7 +4,7 @@ export const ARCHIVE_QUERIES = {
     FROM archives
   `,
   GetArchiveById: `
-    SELECT id,name
+    SELECT id, name
     FROM archives
     WHERE id = ?
   `,
