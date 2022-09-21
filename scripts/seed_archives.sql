@@ -1,10 +1,10 @@
-INSERT INTO aotw.archives (name) 
+INSERT INTO aotw.archives (name, mainTopicsType) 
 VALUES 
-  ('Basketball'),
-  ('Birds'),
-  ('Brands'),
-  ('Cars'),
-  ('Football'),
-  ('License Plates'),
-  ('Regions')
+  ('Basketball', 'International Federations'),
+  ('Birds', 'Classifications'),
+  ('Brands', 'Continents'),
+  ('Cars', 'Continents'),
+  ('Football', 'Confederations'),
+  ('License Plates', 'Continents'),
+  ('Regions', 'Continents')
 ;

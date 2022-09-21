@@ -11,18 +11,18 @@ export const getArchiveById = async (id: Archive['id']) => {
   return execute<Archive>(ARCHIVE_QUERIES.GetArchiveById, [ id ]);
 };
 
-export const createArchive = async ({ name }: Archive) => {
+export const createArchive = async ({ name, mainTopicsType }: Archive) => {
   const result = await execute<{ affectedRows: number }>(
     ARCHIVE_QUERIES.CreateArchive,
-    [ name ]
+    [ name, mainTopicsType ]
   );
   return result.affectedRows > 0;
 };
 
-export const updateArchiveById = async ({ id, name }: Archive) => {
+export const updateArchiveById = async ({ id, name, mainTopicsType }: Archive) => {
   const result = await execute<{ affectedRows: number }>(
     ARCHIVE_QUERIES.UpdateArchiveById,
-    [ name, id ]
+    [ name, mainTopicsType, id ]
   );
   return result.affectedRows > 0;
 };

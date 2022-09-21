@@ -1,20 +1,20 @@
 export const ARCHIVE_QUERIES = {
   GetArchives: `
-    SELECT id, name
+    SELECT id, name, mainTopicsType
     FROM archives
   `,
   GetArchiveById: `
-    SELECT id, name
+    SELECT id, name, mainTopicsType
     FROM archives
     WHERE id = ?
   `,
   CreateArchive: `
-    INSERT INTO archives (name)
-      VALUES (?);
+    INSERT INTO archives (name, mainTopicsType)
+      VALUES (?, ?);
   `,
   UpdateArchiveById: `
     UPDATE archives
-    SET name = ?
+    SET name = ?, mainTopicsType = ?
     WHERE id = ?
   `,
   DeleteArchiveById: `
