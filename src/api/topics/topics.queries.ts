@@ -1,10 +1,10 @@
 export const TOPIC_QUERIES = {
   GetTopics: `
-    SELECT id, name, archiveId, topicId
+    SELECT id, name, type, archiveId, topicId
     FROM topics
   `,
   GetTopicById: `
-    SELECT id, name, archiveId, topicId
+    SELECT id, name, type, archiveId, topicId
     FROM topics
     WHERE id = ?
   `,

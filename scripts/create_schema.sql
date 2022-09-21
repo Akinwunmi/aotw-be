@@ -9,6 +9,7 @@ CREATE TABLE aotw.archives (
 CREATE TABLE aotw.topics (
   id INT NOT NULL AUTO_INCREMENT,
   name VARCHAR(45) NOT NULL,
+  type VARCHAR(45) NOT NULL,
   archiveId INT,
   topicId INT,
   FOREIGN KEY (archiveId) REFERENCES aotw.archives(id),
